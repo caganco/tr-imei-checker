@@ -73,7 +73,7 @@ Open in Visual Studio, set to Release x64, build.
 Or link manually:
 
 ```
-cl /std:c++17 "Siteye giris yapma.cpp" /link libcurl.lib ...
+cl /std:c++17 tr-imei-checker.cpp /link libcurl.lib ...
 ```
 
 ## Usage
