@@ -1,3 +1,4 @@
 # Netscape HTTP Cookie File
 # https://curl.se/docs/http-cookies.html
-# This file is written by libcurl at runtime — do not commit session data.
+# Placeholder cookie jar. libcurl rewrites this at runtime (CURLOPT_COOKIEJAR).
+# Never commit real session data — keep only this header in version control.
