@@ -5,7 +5,7 @@ CLI tool for querying IMEI registration status via Turkey's e-government portal
 
 The public IMEI query portal lets anyone verify whether a device is officially
 registered with BTK (Bilgi Teknolojileri ve İletişim Kurumu). This is relevant
-when buying or selling secondhand phones in Turkey — an unregistered or
+when buying or selling secondhand phones in Turkey - an unregistered or
 blacklisted IMEI means the device may be blocked from GSM networks.
 
 This project was a learning exercise in C++ HTTP client programming: handling
@@ -30,15 +30,15 @@ Marka/Model:
 
 ## Technical highlights
 
-- **CSRF handling** — token extracted from hidden form field via string search;
+- **CSRF handling** - token extracted from hidden form field via string search;
   URL-encoded and injected into the POST body
-- **Cookie lifecycle** — libcurl manages the session cookie between GET and POST
+- **Cookie lifecycle** - libcurl manages the session cookie between GET and POST
   so the portal accepts the submission
-- **Batch mode** — reads one IMEI per line from `list.txt`, queries sequentially
-- **Proxy support** — optional; reads `proxy.txt` (`ip:port` or
+- **Batch mode** - reads one IMEI per line from `list.txt`, queries sequentially
+- **Proxy support** - optional; reads `proxy.txt` (`ip:port` or
   `ip:port:user:pass`). Intended for cases where the same machine is checking
   a large number of devices (e.g. a repair shop's incoming stock)
-- **Platform** — Windows, MSVC, C++17, statically linked libcurl
+- **Platform** - Windows, MSVC, C++17, statically linked libcurl
 
 ## Flow
 
